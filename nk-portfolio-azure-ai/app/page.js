@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Narendra Korada | Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <link rel="icon" type="image/png" href="./images/favicon.png">
-    </head>
-    <body>
-        <header>
-            <a href="#" class="logo-holder">
-                <div class="logo">NK</div>
-                <div class="logo-text">Narendra Korada</div>
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+
+
+
+export default function Home() {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setMenuOpen(!menuOpen);
+
+}
+
+  return (
+    <>
+      <header>
+            <a href="#" className="logo-holder">
+            <div className="logo"> NK </div>
+                <div className="logo-text">Narendra Korada</div>
             </a>
             <nav>
-                <ul id="menu">
+                <ul id="menu" className={menuOpen ? "active" : ""}>
                     <li>
                         <a href="#Home">Home</a>
                     </li>
@@ -29,21 +32,22 @@
                         <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="mailto:narendrakorada472@gmail.com" class="button">Contact Me</a>
+                        <a href="mailto:narendrakorada472@gmail.com" className="button">Contact Me</a>
                     </li>
                 </ul>
 
-                <a href="#" class="mobile-toggle" title="Toggle navigation menu" onClick="toggleMobileMenu();">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/></svg>
+                <a href="#" className="mobile-toggle" title="Toggle navigation menu" onClick= {toggleMobileMenu} >
+                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h10"/>
+                    </svg>
                 </a>
 
             </nav>
         </header>
 
         <main>
-            <section class="hero container">
-                <div class="hero-blue">
+            <section className="hero container">
+                <div className="hero-blue">
                     <div>
                         <h1><small>Hi I'm</small>
                             Narendra Korada
@@ -52,15 +56,15 @@
                             I enjoy solving problems, automating workflows, and delivering reliable features.
                             <span>Passionate about AI and currently working on projects that explore its real-world impact.</span>
                         </p>
-                        <div class="call-to-action">
-                            <a href="./Narendra_Korada_Intern.pdf" class="button black">
+                        <div className="call-to-action">
+                            <a href="./Narendra_Korada_Intern.pdf" className="button black">
                                 View Resume
                             </a>
-                            <a href="mailto:narendrakorada472@gmail.com" class="button white">
+                            <a href="mailto:narendrakorada472@gmail.com" className="button white">
                                 Contact Me
                             </a>
                         </div>
-                        <div class="social-links">
+                        <div className="social-links">
                             <a href="#">
                                 <img src="./images/github.png" alt="GitHub" width="48"/>
                             </a>
@@ -70,13 +74,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-yellow">
+                <div className="hero-yellow">
                     <img src="./images/image-NK.png" alt="Narendra Korada" width="100%"/>
                 </div>
             </section>
-            <section class="logos container">
-                <div class="marquee">
-                    <div class="track">
+            <section className="logos container">
+                <div className="marquee">
+                    <div className="track">
                         <img src="./images/html.png" alt="HTML" width="128"/>
                         <img src="./images/css.png" alt="CSS" width="128"/>
                         <img src="./images/javascript.png" alt="JavaScript" width="128"/>
@@ -99,19 +103,20 @@
                     </div>
                 </div>
             </section>
-            <section id="skills" class="skills container">
+            <section id="skills" className="skills container">
                 <h2>
                     <small>About Me</small>
                     Skills & Technologies
                 </h2>
-                <div class="holder-blue">
-                    <div class="left-column">
+                <div className="holder-blue">
+                    <div className="left-column">
                         <h3>Frontend</h3>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
-                            <!-- <li>React</li> Need to add skills later-->
+                            <li>React</li>
+                            {/* <li>Need to add more skills later</li> */}
                         </ul>
                         <h3>Backend</h3>
                         <ul>
@@ -120,7 +125,7 @@
                             <li>API</li>
                         </ul>
                     </div>
-                    <div class="right-column">
+                    <div className="right-column">
                         <h3>A bit about me</h3>
                         <p>
                             I’m a Master’s student in ITM at IIT Chicago, skilled in Python, Java, JavaScript, SQL, and HTML/CSS. I have experience in API development, 
@@ -133,12 +138,12 @@
                     </div>
                 </div>
             </section>
-            <section class="work-experience container">
+            <section className="work-experience container">
                 <h2>
                     <small>Recent</small>
                     Work Experience
                 </h2>
-                <div class="jobs">
+                <div className="jobs">
                     <article>
                         <figure>
                             <div>
@@ -164,43 +169,43 @@
                 </div>
             </section>
 
-            <section id="projects" class="bento container">
+            <section id="projects" className="bento container">
                 <h2>
                     <small>
                         Previous
                     </small>
                     Completed Projects
                 </h2>
-                <div class="bento-grid">
+                <div className="bento-grid">
 
-                    <a href="#" class="bento-item">
+                    <a href="#" className="bento-item">
                         <img src="./images/bento-1.jpg" alt="Edit with your new projects 1" width="100%"/>
                     </a>
 
-                    <a href="#" class="bento-item">
+                    <a href="#" className="bento-item">
                         <img src="./images/bento-2.jpg" alt="project 2" width="100%"/>
                     </a>
 
-                    <a href="#" class="bento-item">
+                    <a href="#" className="bento-item">
                         <img src="./images/bento-3.jpg" alt="project 3" width="100%"/>
                     </a>
 
-                    <a href="#" class="bento-item">
+                    <a href="#" className="bento-item">
                         <img src="./images/bento-4.jpg" alt="project 4" width="100%"/>
                     </a>
 
-                    <a href="#" class="bento-item">
+                    <a href="#" className="bento-item">
                         <img src="./images/bento-5.jpg" alt="project 5" width="100%"/>
                     </a>
 
-                    <a href="#" class="bento-item">
+                    <a href="#" className="bento-item">
                         <img src="./images/bento-6.jpg" alt="project 6" width="100%"/>
                     </a>
 
                 </div>
             </section>
 
-            <section class="chatbot container">
+            <section className="chatbot container">
                 <h2>
                     <small>
                         Talk to me
@@ -208,42 +213,41 @@
                     Chatbot
                 </h2>
 
-            <div class="chatbot-blue">
-                <div class="chat-info">
+            <div className="chatbot-blue">
+                <div className="chat-info">
                     <h3>Azure AI Chatbot</h3>
                     <p>Here, I have created a chatbot that is aware of all my abilities, employment history, and a copy of my resume.
                           To learn more about me and my background, you can utilize it to ask me questions. </p>
                     <p>You can also download my resume here if you want to take a look at it. I'm currently looking for new 
                         opportunities so if you have a project you think I'd be a good fit for, please get in touch! </p>
-                    <a href="./Narendra_Korada_Intern.pdf" class="button black">Download Resume</a>
+                    <a href="./Narendra_Korada_Intern.pdf" className="button black">Download Resume</a>
                 </div>
-                <div class="chat-box">
-                    <div class="scroll-area">
+                <div className="chat-box">
+                    <div className="scroll-area">
                         <ul id="chat-log">
                             <li>
-                                <span class="avatar bot">AI</span>
-                                <div class="message">Hi, I'm a friendly chatbot that 
+                                <span className="avatar bot">AI</span>
+                                <div className="message">Hi, I'm a friendly chatbot that 
                                     lets you interactive with this portfolio and CV. How can I help?</div>
                             </li>
 
                             <li>
-                                <span class="avatar user">User</span>
-                                <div class="message">I have a question to ask you about this resume.</div>
+                                <span className="avatar user">User</span>
+                                <div className="message">I have a question to ask you about this resume.</div>
                             </li>
 
                         </ul>
                     </div>
-                    <div class="chat-message">
+                    <div className="chat-message">
                         <input type="text"
-                        placeholder="Hey Narendra, what skills are you best at?">
-                        <button class="button black">Send</button>
+                        placeholder="Hey Narendra, what skills are you best at?" />
+                        <button className="button black">Send</button>
                     </div>
                 </div>
             </div>
             </section>
         </main>
 
-    </body>
-</html>
-
-<!-- Stopped 38:01 Responsive portfolio website AI-->
+    </>
+  );
+}

@@ -312,6 +312,8 @@ h3 {
         .left-column {
             flex:1;
             ul {
+                display:flex;
+                flex-wrap: wrap;
                 list-style-type:none;
                 gap:10px;
                 margin-right:100px;
