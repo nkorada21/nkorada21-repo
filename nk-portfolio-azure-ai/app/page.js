@@ -7,6 +7,29 @@ import Image from "next/image";
 export default function Home() {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const [messageInput, setMessageInput] = useState('');
+
+    const [messages, setMessages] = useState([
+        { role: "system", content: "You are a helpful assistant." },
+        { role: "user", content: "why is JavaScript better than Python?" }
+    ]);
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+        let newMessages = [...messages, {role: 'user', content: messageInput }]
+        setMessages(newMessages);
+        setMessageInput('');
+        const apiMessage = await fetch(
+            '/api',
+            {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        ).then(res => res.json());
+        setMessages([...newMessages, {role: 'system', content: apiMessage.message }])
+    }
 
     const toggleMobileMenu = () => {
         setMenuOpen(!menuOpen);
@@ -225,24 +248,25 @@ export default function Home() {
                 <div className="chat-box">
                     <div className="scroll-area">
                         <ul id="chat-log">
-                            <li>
-                                <span className="avatar bot">AI</span>
-                                <div className="message">Hi, I'm a friendly chatbot that 
-                                    lets you interactive with this portfolio and CV. How can I help?</div>
-                            </li>
-
-                            <li>
-                                <span className="avatar user">User</span>
-                                <div className="message">I have a question to ask you about this resume.</div>
-                            </li>
+                            {
+                                messages.map((message, index) =>(
+                                   <li key={index} className={`${message.role}`}>
+                                    <span className={`avatar`}>
+                                        {message.role === 'user' ? 'You' : 'AI'}
+                                    </span>
+                                    <div className="message">{message.content}</div>
+                                   </li> 
+                                ))
+                            }
+                            
 
                         </ul>
                     </div>
-                    <div className="chat-message">
+                    <form onSubmit={submitForm} className="chat-message">
                         <input type="text"
-                        placeholder="Hey Narendra, what skills are you best at?" />
+                        placeholder="Hey Narendra, what skills are you best at?" value={messageInput} onChange={e => setMessageInput(e.target.value)}/>
                         <button className="button black">Send</button>
-                    </div>
+                    </form>
                 </div>
             </div>
             </section>
