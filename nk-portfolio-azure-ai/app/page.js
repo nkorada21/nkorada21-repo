@@ -7,28 +7,33 @@ import Image from "next/image";
 export default function Home() {
 
     const [menuOpen, setMenuOpen] = useState(false);
+
     const [messageInput, setMessageInput] = useState('');
 
     const [messages, setMessages] = useState([
-        { role: "system", content: "You are a helpful assistant." },
-        { role: "user", content: "why is JavaScript better than Python?" }
+        {
+            role: "assistant",
+            content: "How can I help you learn more about Narendra and his Resume?" 
+        }
+        
     ]);
 
     const submitForm = async (e) => {
         e.preventDefault();
-        let newMessages = [...messages, {role: 'user', content: messageInput }]
+        let newMessages = [...messages, {role: "user", content: messageInput }]
         setMessages(newMessages);
         setMessageInput('');
         const apiMessage = await fetch(
-            '/api',
+            "/api",
             {
-                method: 'GET',
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
+                    "Content-Type": "application/json",
                 },
+                body: JSON.stringify({message: messageInput})
             }
         ).then(res => res.json());
-        setMessages([...newMessages, {role: 'system', content: apiMessage.message }])
+        setMessages([...newMessages, {role: "system", content: apiMessage.message }]);
     }
 
     const toggleMobileMenu = () => {
@@ -240,7 +245,7 @@ export default function Home() {
                 <div className="chat-info">
                     <h3>Azure AI Chatbot</h3>
                     <p>Here, I have created a chatbot that is aware of all my abilities, employment history, and a copy of my resume.
-                          To learn more about me and my background, you can utilize it to ask me questions. </p>
+                        To learn more about me and my background, you can utilize it to ask me questions. </p>
                     <p>You can also download my resume here if you want to take a look at it. I'm currently looking for new 
                         opportunities so if you have a project you think I'd be a good fit for, please get in touch! </p>
                     <a href="./Narendra_Korada_Intern.pdf" className="button black">Download Resume</a>
@@ -249,17 +254,13 @@ export default function Home() {
                     <div className="scroll-area">
                         <ul id="chat-log">
                             {
-                                messages.map((message, index) =>(
-                                   <li key={index} className={`${message.role}`}>
-                                    <span className={`avatar`}>
-                                        {message.role === 'user' ? 'You' : 'AI'}
-                                    </span>
+                                messages.map((message, index) => (
+                                <li key={index} className={`${message.role}`}>
+                                    <span className={`avatar`}>{message.role === 
+                                    "user" ? "You" : "AI"}</span>
                                     <div className="message">{message.content}</div>
-                                   </li> 
-                                ))
-                            }
-                            
-
+                                </li>
+                                ))}
                         </ul>
                     </div>
                     <form onSubmit={submitForm} className="chat-message">
@@ -271,6 +272,9 @@ export default function Home() {
             </div>
             </section>
         </main>
+        <footer class="footer">
+            <p>© 2025 Narendra Korada. All rights reserved.</p>
+        </footer>
 
     </>
   );
