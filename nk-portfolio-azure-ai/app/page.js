@@ -272,7 +272,7 @@ export default function Home() {
             </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer className="footer">
             <p>© 2025 Narendra Korada. All rights reserved.</p>
         </footer>
 
