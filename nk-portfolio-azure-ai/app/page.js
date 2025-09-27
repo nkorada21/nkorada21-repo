@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 
 
 
@@ -218,8 +217,8 @@ export default function Home() {
                         <img src="./images/bento-3.jpg" alt="project 3" width="100%"/>
                     </a>
 
-                    <a href="#" className="bento-item">
-                        <img src="./images/bento-4.jpg" alt="project 4" width="100%"/>
+                    <a href="Narendrakorada-portfolio/images/pomodoro-app.png" className="bento-item" title="Pomodoro-App">
+                        <img src="./images/pomodoro-app.png" alt="project 4" width="100%"/>
                     </a>
 
                     <a href="#" className="bento-item">
