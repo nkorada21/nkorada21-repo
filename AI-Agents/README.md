@@ -1,4 +1,4 @@
-# RESEARCH COMPANY AGENT
+# RESEARCH COMPANY TOOL
 
 **Takes in a company URL and scrapes their website then returns an AI generated**
 
