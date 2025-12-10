@@ -79,12 +79,12 @@ export default function Home() {
                         <h1><small>Hi I'm</small>
                             Narendra Korada
                         </h1>
-                        <p>ITM master’s student at IIT Chicago. Skills: HTML/CSS/JS for UI, Python/Java/SQL/APIs for backend. 
-                            I enjoy solving problems, automating workflows, and delivering reliable features.
-                            <span>Passionate about AI and currently working on projects that explore its real-world impact.</span>
+                        <p>I’m an ITM master’s student at IIT Chicago with skills in Java, Python, JavaScript, SQL, and APIs. 
+                            I enjoy solving real-world problems, automating processes, and creating software that works smoothly and efficiently.<br></br>
+                            <span>I’m passionate about AI and enjoy creating projects that show how intelligent systems can solve real-world problems.</span>
                         </p>
                         <div className="call-to-action">
-                            <a href="./Narendra_Korada_Intern.pdf" className="button black">
+                            <a href="./Narendra_Korada_SWE.pdf" className="button black">
                                 View Resume
                             </a>
                             <a href="mailto:narendrakorada472@gmail.com" className="button white">
@@ -92,10 +92,10 @@ export default function Home() {
                             </a>
                         </div>
                         <div className="social-links">
-                            <a href="#">
+                            <a href="https://github.com/nkorada21">
                                 <img src="./images/github.png" alt="GitHub" width="48"/>
                             </a>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/narendra-korada-2a3034185/">
                                 <img src="./images/linkedin.png" alt="LinkedIn" width="48"/>
                             </a>
                         </div>
@@ -142,25 +142,31 @@ export default function Home() {
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
-                            <li>React</li>
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
                             {/* <li>Need to add more skills later</li> */}
                         </ul>
                         <h3>Backend</h3>
                         <ul>
                             <li>Java</li>
+                            <li>Spring Boot</li>
                             <li>Python</li>
-                            <li>API</li>
+                            <li>REST API</li>
+                            <li>MySQL</li>
+                            <li>PEGA PRPC</li>
                         </ul>
                     </div>
                     <div className="right-column">
                         <h3>A bit about me</h3>
                         <p>
-                            I’m a Master’s student in ITM at IIT Chicago, skilled in Python, Java, JavaScript, SQL, and HTML/CSS. I have experience in API development, 
-                            backend integration, and system automation, and I’m passionate about building scalable, efficient software with growing interest in AI.
+                            Master’s student in ITM at IIT Chicago with technical strengths in Python, Java, JavaScript, SQL, and HTML/CSS.<br></br>
+                            Experienced in API development, backend workflows, database operations, and automation. 
+                            Focused on creating scalable, efficient systems with emerging interest in AI and modern software engineering practices.
                         </p>
                             <p>
-                                Outside of coding, I enjoy hiking, photography, and exploring new technologies. I’m excited to connect with like-minded professionals and contribute to innovative projects.
-
+                                Outside of coding, I enjoy traveling, photography, and learning about the universe - everything from stars and galaxies to how space works.<br></br>
+                                I love exploring new technologies and connecting with people who share the same curiosity and passion for innovation.
                             </p>
                     </div>
                 </div>
@@ -174,24 +180,39 @@ export default function Home() {
                     <article>
                         <figure>
                             <div>
-                                <img src="./images/workplace-2.jpg" alt="Workplace 1 - HCL Technologies" width="100%" />
-                                <figcaption>Workplace 1 - HCL Technologies</figcaption>
+                                <img src="./images/oigetit_cover.jpg" alt="Workplace 1 - Oigetit AI Fact Checker" width="100%" />
+                                <figcaption>Workplace 1 - Oigetit AI Fact Checker</figcaption>
                             </div>
                         </figure>
-                        <h3>HCL Technologies</h3>
-                        <div>Aug 2022 - Jan 2024</div>
-                        <p>description for a workplace</p>
+                        <h3>QA Analyst</h3>
+                        <div>July 2025 - Nov 2025</div>
+                        <p>QA Analyst with hands-on experience testing Oigetit’s AI-powered fact-checking platform. 
+                            I performed end-to-end testing, identified critical bugs, validated fixes with developers, and improved overall platform stability.</p>
                     </article>
                     <article>
                         <figure>
                             <div>
-                                <img src="./images/workplace-2.jpg" alt="Workplace 2 - Cognizant" width="100%" />
+                                <img src="./images/HCLTECH.jpg" alt="Workplace 2 - HCL Technologies" width="100%" />
+                                <figcaption>Workplace 2 - HCL Technologies</figcaption>
+                            </div>
+                        </figure>
+                        <h3>Software Engineer</h3>
+                        <div>Aug 2022 - Jan 2024</div>
+                        <p>Software Engineer at HCL Technologies focused on backend development, 
+                            workflow automation, and API integration using PEGA and REST services.</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <div>
+                                <img src="./images/cognizant.jpg" alt="Workplace 2 - Cognizant" width="100%" />
                                 <figcaption>Workplace 2 - Cognizant</figcaption>
                             </div>
                         </figure>
-                        <h3>HCL Technologies</h3>
+                        <h3>Intern - graduate Trainee</h3>
                         <div>Aug 2022 - Jan 2024</div>
-                        <p>description for a workplace</p>
+                        <p>PeopleSoft Technical Intern focused on developing backend components, 
+                            optimizing Oracle SQL queries, and enhancing HR system workflows. 
+                            Gained strong experience in PeopleSoft tools, data integration, and enterprise application support.</p>
                     </article>
                 </div>
             </section>
@@ -217,7 +238,7 @@ export default function Home() {
                         <img src="./images/bento-3.jpg" alt="project 3" width="100%"/>
                     </a>
 
-                    <a href="Narendrakorada-portfolio/images/pomodoro-app.png" className="bento-item" title="Pomodoro-App">
+                    <a href="https://pomodoro-five-theta.vercel.app/" className="bento-item" title="Pomodoro-App">
                         <img src="./images/pomodoro-app.png" alt="project 4" width="100%"/>
                     </a>
 
@@ -225,8 +246,8 @@ export default function Home() {
                         <img src="./images/bento-5.jpg" alt="project 5" width="100%"/>
                     </a>
 
-                    <a href="#" className="bento-item">
-                        <img src="./images/bento-6.jpg" alt="project 6" width="100%"/>
+                    <a href="https://fluxora-ai.vercel.app/" className="bento-item" title="Fluxora AI">
+                        <img src="./images/fluxora-ai.png" alt="project 6" width="100%"/>
                     </a>
 
                 </div>
@@ -247,7 +268,7 @@ export default function Home() {
                         To learn more about me and my background, you can utilize it to ask me questions. </p>
                     <p>You can also download my resume here if you want to take a look at it. I'm currently looking for new 
                         opportunities so if you have a project you think I'd be a good fit for, please get in touch! </p>
-                    <a href="./Narendra_Korada_Intern.pdf" className="button black">Download Resume</a>
+                    <a href="./Narendra_Korada_SWE.pdf" className="button black">Download Resume</a>
                 </div>
                 <div className="chat-box">
                     <div className="scroll-area">
@@ -272,7 +293,7 @@ export default function Home() {
             </section>
         </main>
         <footer className="footer">
-            <p>© 2025 Narendra Korada. All rights reserved.</p>
+            <p>&copy; 2025 Narendra Korada. All rights reserved.</p>
         </footer>
 
     </>

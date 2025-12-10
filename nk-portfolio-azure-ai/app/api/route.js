@@ -80,48 +80,50 @@ export async function POST(req) {
   }
 }
 
-const DATA_RESUME = `NARENDRA KORADA
-Chicago, IL | +1 (312) 880-8673 | narendrakorada472@gmail.com | /Narendra Korada
-SUMMARY
-Master’s student in Information Technology and Management with a focus on software engineering and systems 
-design. I am skilled in Python, Java, JavaScript, and SQL, with practical experience in API development, backend 
-integration, system automation, and workflow optimization. Actively seeking internship opportunities in 2025 and 
-beyond where I can contribute to technology-driven innovation by building scalable, efficient, and impactful 
-software solutions.
-EDUCATION
-Illinois Institute of Technology, Chicago, IL MAY 2026
-Master of Information Technology and Management CGPA: 3.77
-Raghu Institute of Technology, Visakhapatnam, AP JUN 2022
-Bachelor of Technology CGPA: 8.56
-TECHNICAL SKILLS 
-Languages: Python, Java, JavaScript, SQL, HTML/CSS
-Frameworks/Tools: PEGA PRPC, REST API, Git, Visual Studio, React (basic)
-Databases: MySQL, Oracle
-Platforms: Windows, Linux, macOS
-Concepts: API Integration, Database Management, System Automation, App Development, Agile 
-Development
-WORK EXPERIENCE
-SOFTWARE ENGINEER
-HCL Technologies, Chennai, TN, India AUG 2022 – JAN 2024
-Key Skill: PEGA
-Developed internal billing automation tools using PEGA PRPC and REST APIs, reducing 
-processing time by 25%.
-Built scalable backend solutions and dynamic UI components to enhance case management 
-efficiency.
-Collaborated with cross-functional teams to deploy business-critical software in Agile sprints.
-Troubleshot technical issues using diagnostic tools and contributed to CI/CD processes.
-INTERN - PeopleSoft Technical Training
-Cognizant, Hyderabad, TG, India JAN 2022 - JUL 2022
-Enhanced the HR management system “PRO_DNA” by building backend forms and data pipelines.
-Optimized SQL queries and improved database retrieval performance by 15%.
-Participated in Agile ceremonies and collaborated with cross-functional engineering teams.
-PROJECT EXPERIENCE
-HOTEL BOOKING APPLICATION | PEGA PRPC
-Created a digital hotel booking system with automated workflows for bookings and payments.
-Integrated customer data management and process monitoring components.
-OBJECT RECOGNITION SYSTEM USING CONVOLUTIONAL NEURAL NETWORK | Python, CNN
-Developed a real-time image detection system using Convolutional Neural Networks.
-Improved system memory allocation and model performance over traditional pipelines.
-CERTIFICATIONS
-Certified System architect in PEGA (v8.4) - UAP by Talent Sprint. 
-Certified Senior System architect in PEGA (v8.6) - UAP by Talent Sprint`
+const DATA_RESUME = `NARENDRA KORADA 
+Chicago, IL | +1 (312) 880-8673 | narendrakorada472@gmail.com | /Narendra Korada 
+SUMMARY 
+Master’s student in Information Technology and Management, focused on software engineering and backend 
+development.  I  am  skilled  in  Java,  Python,  and  SQL  with  hands-on  experience  building  and  integrating  APIs. 
+Passionate tech enthusiast working hard to become a software engineer and contribute to impactful projects. 
+EDUCATION 
+Illinois Institute of Technology, Chicago, IL                                                                                                       MAY 2026 
+Master of Information Technology and Management                                                                     CGPA: 3.77 
+ 
+Raghu Institute of Technology, Visakhapatnam, AP                                                                                           JUN 2022 
+Bachelor of Technology                           CGPA: 8.56  
+TECHNICAL SKILLS  
+• Languages: Python, Java, JavaScript, SQL, HTML/CSS 
+• Frameworks/Tools: PEGA PRPC, REST API, Git, GitHub, Visual Studio, React (basic) 
+• Databases: MySQL, Oracle 
+• Platforms: Windows, Linux, macOS 
+• Concepts: API Integration, Database Management, System Automation, App Development, Agile 
+Development 
+WORK EXPERIENCE 
+WEBSITE QA ANALYST INTERN 
+Oigetit – AI Fact Checker             July 2025 – Nov 2025 
+Los Gatos, CA (Remote) 
+• Found and documented 25+ major UI and functional issues during testing, which helped the team 
+improve the platform’s stability by about 30% once the fixes were deployed. 
+• Performed complete end-to-end testing on key modules like Fact-Checked Stories, AI, Sustainability, 
+and Video, helping reduce user experience issues by roughly 20% through clear bug reports and 
+retesting. 
+SOFTWARE ENGINEER 
+HCL Technologies, Chennai, TN, India AUG 2022 – JAN 2024 
+• Developed backend features using PEGA PRPC, Java, and REST APIs to automate billing workflows, 
+which helped cut processing time by around 25% for internal teams. 
+• Created and fine-tuned PEGA Report Definitions to pull and present case data clearly, making workflow 
+tracking easier for end users. 
+• Worked closely with the team during Agile sprints to build new features, troubleshoot issues, and quickly 
+resolve production bugs to keep systems running smoothly. 
+PROJECT EXPERIENCE 
+HOTEL BOOKING APPLICATION | PEGA PRPC 
+• Created a digital hotel booking system with automated workflows for bookings and payments. 
+• Integrated customer data management and process monitoring components. 
+OBJECT RECOGNITION SYSTEM | Python, CNN 
+• Developed a real-time image detection system using Convolutional Neural Networks. 
+• Improved system memory allocation and model performance over traditional pipelines. 
+CERTIFICATIONS 
+• Certified System architect in PEGA (v8.4) - UAP by Talent Sprint.  
+• Certified Senior System architect in PEGA (v8.6) - UAP by Talent Sprint. 
+`
