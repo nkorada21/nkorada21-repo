@@ -209,7 +209,7 @@ export default function Home() {
                             </div>
                         </figure>
                         <h3>Intern - graduate Trainee</h3>
-                        <div>Aug 2022 - Jan 2024</div>
+                        <div>Mar 2022 - July 2022</div>
                         <p>PeopleSoft Technical Intern focused on developing backend components, 
                             optimizing Oracle SQL queries, and enhancing HR system workflows. 
                             Gained strong experience in PeopleSoft tools, data integration, and enterprise application support.</p>
@@ -226,28 +226,28 @@ export default function Home() {
                 </h2>
                 <div className="bento-grid">
 
-                    <a href="#" className="bento-item">
-                        <img src="./images/bento-1.jpg" alt="Edit with your new projects 1" width="100%"/>
+                    <a href="#" className="bento-item" title="Task Management Using SpringBoot">
+                        <img src="./images/Application-Dev.png" alt="Task Management Using SpringBoot" width="100%"/>
                     </a>
 
-                    <a href="#" className="bento-item">
-                        <img src="./images/bento-2.jpg" alt="project 2" width="100%"/>
+                    <a href="#" className="bento-item" title="ChatBot Rule Based Application">
+                        <img src="./images/Chatbot-AI-dev.png" alt="ChatBot Rule Based Application" width="100%"/>
                     </a>
 
-                    <a href="#" className="bento-item">
-                        <img src="./images/bento-3.jpg" alt="project 3" width="100%"/>
+                    <a href="#" className="bento-item" title="Expense Tracker Application">
+                        <img src="./images/Expense-Tracker.png" alt="Expense Tracker Application" width="100%"/>
                     </a>
 
                     <a href="https://pomodoro-five-theta.vercel.app/" className="bento-item" title="Pomodoro-App">
-                        <img src="./images/pomodoro-app.png" alt="project 4" width="100%"/>
+                        <img src="./images/pomodoro-app.png" alt="Pomodoro-App" width="100%"/>
                     </a>
 
-                    <a href="#" className="bento-item">
-                        <img src="./images/bento-5.jpg" alt="project 5" width="100%"/>
+                    <a href="#" className="bento-item" title="Library Management System Using Java(OOP Concepts)">
+                        <img src="./images/Library-Management-System.jpg" alt="Library Management System Using Java(OOP Concepts)" width="100%"/>
                     </a>
 
                     <a href="https://fluxora-ai.vercel.app/" className="bento-item" title="Fluxora AI">
-                        <img src="./images/fluxora-ai.png" alt="project 6" width="100%"/>
+                        <img src="./images/fluxora-ai.png" alt="Fluxora AI" width="100%"/>
                     </a>
 
                 </div>
