@@ -80,50 +80,68 @@ export async function POST(req) {
   }
 }
 
-const DATA_RESUME = `NARENDRA KORADA 
-Chicago, IL | +1 (312) 880-8673 | narendrakorada472@gmail.com | /Narendra Korada 
-SUMMARY 
-Master’s student in Information Technology and Management, focused on software engineering and backend 
-development.  I  am  skilled  in  Java,  Python,  and  SQL  with  hands-on  experience  building  and  integrating  APIs. 
-Passionate tech enthusiast working hard to become a software engineer and contribute to impactful projects. 
-EDUCATION 
-Illinois Institute of Technology, Chicago, IL                                                                                                       MAY 2026 
-Master of Information Technology and Management                                                                     CGPA: 3.77 
- 
-Raghu Institute of Technology, Visakhapatnam, AP                                                                                           JUN 2022 
-Bachelor of Technology                           CGPA: 8.56  
-TECHNICAL SKILLS  
-• Languages: Python, Java, JavaScript, SQL, HTML/CSS 
-• Frameworks/Tools: PEGA PRPC, REST API, Git, GitHub, Visual Studio, React (basic) 
-• Databases: MySQL, Oracle 
-• Platforms: Windows, Linux, macOS 
-• Concepts: API Integration, Database Management, System Automation, App Development, Agile 
-Development 
-WORK EXPERIENCE 
-WEBSITE QA ANALYST INTERN 
-Oigetit – AI Fact Checker             July 2025 – Nov 2025 
-Los Gatos, CA (Remote) 
-• Found and documented 25+ major UI and functional issues during testing, which helped the team 
-improve the platform’s stability by about 30% once the fixes were deployed. 
-• Performed complete end-to-end testing on key modules like Fact-Checked Stories, AI, Sustainability, 
-and Video, helping reduce user experience issues by roughly 20% through clear bug reports and 
-retesting. 
-SOFTWARE ENGINEER 
-HCL Technologies, Chennai, TN, India AUG 2022 – JAN 2024 
-• Developed backend features using PEGA PRPC, Java, and REST APIs to automate billing workflows, 
-which helped cut processing time by around 25% for internal teams. 
-• Created and fine-tuned PEGA Report Definitions to pull and present case data clearly, making workflow 
-tracking easier for end users. 
-• Worked closely with the team during Agile sprints to build new features, troubleshoot issues, and quickly 
-resolve production bugs to keep systems running smoothly. 
-PROJECT EXPERIENCE 
-HOTEL BOOKING APPLICATION | PEGA PRPC 
-• Created a digital hotel booking system with automated workflows for bookings and payments. 
-• Integrated customer data management and process monitoring components. 
-OBJECT RECOGNITION SYSTEM | Python, CNN 
-• Developed a real-time image detection system using Convolutional Neural Networks. 
-• Improved system memory allocation and model performance over traditional pipelines. 
-CERTIFICATIONS 
-• Certified System architect in PEGA (v8.4) - UAP by Talent Sprint.  
-• Certified Senior System architect in PEGA (v8.6) - UAP by Talent Sprint. 
+const DATA_RESUME = `Narendra Korada
+Chicago, IL (Open to Relocate) | +1 (312) 880-8673 | narendrakorada472@gmail.com | /Narendra Korada | /NKPortfolio
+
+
+PROFESSIONAL SUMMARY
+Software Engineer with experience in backend development, API integration, and production-level web systems. Strong foundation in Java, SQL, and object-oriented programming, with hands-on experience working in Agile environments. Seeking full-time Software Engineer / Java Developer roles to build scalable, high-quality software. 
+
+
+TECHNICAL SKILLS
+Programming Languages: Java, SQL, C, JavaScript, Python
+Data Structures & Algorithms: Arrays, Strings, Linked List, Hash Maps, Stacks, Queues, Basic Recursion
+Backend & APIs: Spring Boot, RESTful API development, request/response handling, input validation, error handling, JSON
+Frontend Technologies: HTML, CSS, React (basic)
+Databases: MySQL, Oracle
+Low code / Enterprise Tools: PEGA PRPC (case management, workflows, report definitions)
+Tools & Version Control: Git, GitHub, Visual Studio, IntelliJ
+Software Engineering Fundamentals: Object-Oriented Programming (OOP), debugging, file handling, Agile/Scrum
+Quality & Testing: Functional testing, UI testing, bug tracking, production validation
+
+
+PROFESSIONAL EXPERIENCE
+Website QA Analyst Intern
+Oigetit – AI Fact Checker | Los Gatos, CA | Remote                                                                                                                   (Jul 2025 – Nov 2025)
+•	Performed functional and UI testing on a live AI-powered web platform used in production.
+•	Identified and documented 25+ critical UI and functional defects, contributing to approximately 30% improvement in platform stability after fixes
+•	Executed end-to-end testing on key modules including Fact-Checked Stories, AI features, Sustainability, and Video
+•	Collaborated closely with developers to validate fixes and reduce user-facing issues by 20%
+
+Software Engineer
+HCL Technologies | Chennai, India                                                                                                                                              (Aug 2022 – Jan 2024)
+•	Developed backend features using PEGA PRPC, Java, and REST APIs to automate enterprise billing workflows, reducing processing time by approximately 25%
+•	Built and maintained backend logic and UI components supporting large-scale case management systems 
+•	Designed and optimized PEGA Report Definitions to retrieve and present structured operational data for workflow tracking 
+•	Worked in Agile sprints to implement new features, troubleshoot defects, and resolve production issues to maintain system stability
+
+
+PROJECTS
+Full-Stack AI Web Application – Fluxora AI
+React, Node.js, PostgreSQL 
+•	Built a full-stack AI-powered web Application enabling users to generate content, images, and resume insights
+•	Designed frontend components using React and implemented backend services to handle user requests and data storage
+•	Integrated authentication and premium feature access to support multiple user roles
+•	Ensured smooth data flow between frontend, backend, and database layers for a reliable user experience
+
+ToDoRails Elite – Enterprise Backend Application
+Java 17, Spring Boot, Spring Security, MySQL, Junit, MockMvc, Git
+•	Developed a secure RESTful backend application using Java 17 and Spring Boot, implementing JWT-based authentication, role-based access control (RBAC), and BCrypt password encryption
+•	Designed a layered architecture (Controller-Service-Repository) following SOLID principles, and implemented input validation, global exception handling, SLF4J logging, and automated unit/integration testing to ensure production-level reliability and maintainability
+
+
+EDUCATION
+Master of Information Technology and Management                                                                                                                       GPA: 3.80
+Illinois Institute of Technology, Chicago, IL
+December 2025
+
+Bachelor of Technology in Electronics and Communication Engineering                                                                              CGPA: 8.5 / 10
+Raghu Institute of Technology, India
+April 2022
+
+
+ CERTIFICATIONS
+•	Amazon Junior Software Developer Certificate – Coursera
+•	PEGA Certified System Architect (v8.4) & Senior System Architect (v8.6) – UAP, Talent Sprint
+
 `
